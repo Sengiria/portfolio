@@ -1,0 +1,202 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+    --color-foreground: #f8dafc;
+    --color-muted: #9aa1ac;
+    --color-accent: #16a249;
+    --color-primary: #3b82f6;
+}
+
+:root {
+    --background: 220 25% 5%;
+    --primary: 217 91% 60%;
+    --primary-glow: 217 91% 70%;
+    --accent: 142 76% 36%;
+    --accent-glow: 142 76% 46%;
+    --hero-gradient: linear-gradient(135deg,
+            hsl(var(--background)) 0%,
+            hsl(215 25% 8%) 50%,
+            hsl(var(--background)) 100%);
+
+    --shadow-elegant: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --shadow-glow: 0 0 20px var(--color-primary);
+    --shadow-accent-glow: 0 0 20px var(--color-accent);
+    --transition-smooth: all 0.3s ease;
+    --gradient-card: linear-gradient(145deg, rgb(15, 18, 26), rgb(19, 24, 32));
+    --shadow-card: #04050666, hsl(220 25% 2% / 0.4);
+    /* comma to split multiple shadows */
+}
+
+body {
+    background-color: #0b0f1a;
+    color: hsl(210 40% 98%);
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-gradient-hero {
+    background: var(--hero-gradient);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.bg-gradient-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center,
+            hsla(217, 91%, 60%, 0.2),
+            hsla(142, 76%, 36%, 0.15),
+            transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, rgb(60, 131, 246), rgb(109, 162, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.border-border {
+    border-color: rgba(80, 195, 255, 0.12);
+}
+
+.glass {
+    background-color: #0f121acc;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
+.glass-card {
+    background-image: linear-gradient(145deg, rgb(15, 18, 26), rgb(19, 24, 32));
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-elegant);
+}
+
+.nav-link {
+    @apply relative inline-block text-muted hover:text-foreground transition-colors;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 0px var(--color-primary);
+    }
+
+    to {
+        box-shadow: 0 0 20px var(--color-primary);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.hover-lift {
+    transition: var(--transition-smooth);
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-elegant);
+}
+
+.hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+}
+
+.hover-accent-glow:hover {
+    box-shadow: var(--shadow-accent-glow);
+}
+
+.bg-card-gradient {
+    background-image: linear-gradient(145deg, rgb(20, 26, 36), rgb(25, 32, 46));
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.hover-lift {
+    @apply transform transition-transform duration-300 hover:-translate-y-2;
+}
+
+.bg-gradient-card {
+  background: var(--gradient-card);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
