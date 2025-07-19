@@ -60,7 +60,7 @@ const About = () => {
             <div className="relative group hover-lift hover-glow">
               <div className="absolute inset-0 bg-gradient-primary rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               <img
-                src="/cv_image.jpg"
+                src={`${import.meta.env.BASE_URL}cv_image.jpg`}
                 alt="Developer at work"
                 className="relative w-full h-96 object-cover rounded-xl shadow-card object-top scale-x-[-1]"
               />
@@ -69,7 +69,7 @@ const About = () => {
             <div className="relative group hover-lift hover-glow">
               <div className="absolute inset-0 bg-gradient-accent rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               <img
-                src="/cats.jpg"
+                src={`${import.meta.env.BASE_URL}cats.jpg`}
                 alt="Developer workspace"
                 className="relative w-full h-64 object-cover rounded-xl shadow-card object-top"
               />

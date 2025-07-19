@@ -1,8 +1,6 @@
 import {
   Code2,
-  Smartphone,
   Database,
-  Globe,
   Palette,
   GitBranch,
   Terminal,

@@ -63,7 +63,7 @@ const Portfolio = () => {
                         >
                             <div className="relative overflow-hidden">
                                 <img
-                                    src={project.image}
+                                    src={`${import.meta.env.BASE_URL}${project.image}`}
                                     alt={project.title}
                                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
