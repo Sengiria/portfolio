@@ -54,7 +54,7 @@ const Footer = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://github.com/sengiria" 
+              href="https://linkedin.com/in/sengiria" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group flex items-center justify-center w-12 h-12 rounded-full text-muted hover:bg-primary hover:text-[#0a0c10] transition-all duration-300 hover-lift"

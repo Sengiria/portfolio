@@ -74,7 +74,7 @@ const Hero = () => {
                             <Github size={28} />
                         </a>
                         <a
-                            href="https://github.com/sengiria"
+                            href="https://linkedin.com/in/sengiria"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-300 hover:text-blue-500 hover:-translate-y-1 transition-transform duration-200 inline-block"
