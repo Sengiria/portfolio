@@ -42,7 +42,7 @@ const Portfolio = () => {
 
     return (
         <section id="portfolio" className="py-20 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5"></div>
+            <div className="absolute inset-0  from-accent/5  to-primary/5"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
@@ -67,7 +67,7 @@ const Portfolio = () => {
                                     alt={project.title}
                                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80  to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="absolute bottom-4 left-4 right-4 flex justify-center space-x-2">
                                         <button
                                             className="flex items-center bg-primary hover-glow text-[#0a0c10] hover:bg-[#6da2f8] px-4 py-2 text-sm rounded-lg transition cursor-pointer"
@@ -92,7 +92,7 @@ const Portfolio = () => {
                                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                                     {project.title}
                                 </h3>
-                                <p className="text-muted mb-4 leading-relaxed">
+                                <p className="text-muted mb-4 ">
                                     {project.description}
                                 </p>
 

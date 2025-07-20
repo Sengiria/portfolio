@@ -23,7 +23,7 @@ const Hero = () => {
 
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero pt-20">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+            <div className="absolute inset-0"></div>
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }}></div>
 
@@ -39,7 +39,7 @@ const Hero = () => {
                         I strive to build exceptional digital experiences
                     </h2>
 
-                    <p className="text-base sm:text-xl text-muted max-w-2xl mx-auto sm:mb-12 mb-6 leading-relaxed">
+                    <p className="text-base sm:text-xl text-muted max-w-2xl mx-auto sm:mb-12 mb-6 ">
                         I'm a passionate frontend developer specializing in creating beautiful,
                         responsive, and user-friendly web applications using modern technologies
                         like <span className="text-primary font-medium">React</span>,

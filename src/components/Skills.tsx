@@ -11,7 +11,6 @@ import {
 
 const Skills = () => {
   const skills = [
-    // Frontend Core
     {
       name: 'React',
       icon: Code2,
@@ -91,7 +90,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="sm:py-20 py-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5"></div>
+      <div className="absolute inset-0  from-accent/5  to-primary/5"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center sm:mb-16 mb-6">

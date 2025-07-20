@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-16 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+      <div className="absolute inset-0"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -29,11 +29,11 @@ const About = () => {
                 <Code className="mr-3 text-primary" size={28} />
                 My Journey
               </h3>
-              <p className="text-muted leading-relaxed mb-4 text-center sm:text-start">
+              <p className="text-muted mb-4 text-center sm:text-start">
                 Growing up, I was lucky to have a father who worked as an IT administrator and loved video games — we played together all the time, from classics to competitive titles. That early exposure not only made me a lifelong gamer, but also sparked a deep curiosity about how things work behind the screen.
                 What started as a hobby quickly turned into a passion. Over time, I found myself drawn to the creative and technical challenges of development — and I wouldn’t have it any other way.
               </p>
-              <p className="text-muted leading-relaxed text-center sm:text-start">
+              <p className="text-muted text-center sm:text-start">
                 My curiosity naturally expanded beyond code — I started learning how to design by drawing on my iPad, experimenting with UX, and diving into the backend to understand how everything connects. Whether it’s data flow, interface polish, or even storytelling, I love understanding how all the pieces come together to shape the final experience.
               </p>
             </div>
@@ -46,7 +46,7 @@ const About = () => {
                 {hobbies.map(hobby => (
                   <div
                     key={hobby.text}
-                    className="flex items-center space-x-3 p-3 rounded-lg bg-muted/20 hover:bg-muted/40 transition-colors"
+                    className="flex items-center space-x-3 p-3 rounded-lg bg-muted/20 transition-colors"
                   >
                     <hobby.icon className="text-accent" size={20} />
                     <span className="text-sm text-foreground">{hobby.text}</span>
@@ -67,7 +67,7 @@ const About = () => {
             </div>
 
             <div className="relative group hover-lift hover-glow">
-              <div className="absolute inset-0 bg-gradient-accent rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
               <img
                 src={`${import.meta.env.BASE_URL}cats.jpg`}
                 alt="Developer workspace"

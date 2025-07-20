@@ -19,8 +19,8 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="relative overflow-hidden bg-gradient-to-br from-card via-background to-card border-t border-border">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+    <footer id="contact" className="relative overflow-hidden border-t border-border">
+      <div className="absolute inset-0"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
