@@ -1,21 +1,19 @@
-# 🎨 React + TypeScript + Vite Portfolio
+#  React + TypeScript + Vite Portfolio
 
 This project is part of my developer portfolio. It showcases custom components, animations, and responsive layouts — all built with modern frontend technologies.
 
-## 🚀 Live Demo
+##  Live Demo
 
-👉 [Check it out here](https://sengiria.github.io/portfolio/)
+[Check it out here](https://sengiria.github.io/portfolio/)
 
-> Replace with your actual URL once deployed.
+##  Features
 
-## 🧩 Features
+- Built with Vite for lightning-fast performance
+- TypeScript support with strict linting
+- Styled with Tailwind CSS and Framer Motion
+- GitHub Pages deployment via `vite-plugin-gh-pages`
 
-- ⚡ Built with Vite for lightning-fast performance
-- 🛠️ TypeScript support with strict linting
-- 💅 Styled with Tailwind CSS and Framer Motion
-- 🔄 GitHub Pages deployment via `vite-plugin-gh-pages`
-
-## 📦 Tech Stack
+## Tech Stack
 
 - **Framework:** React + Vite
 - **Language:** TypeScript
