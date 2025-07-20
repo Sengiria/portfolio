@@ -4,21 +4,21 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            title: 'E-Commerce Platform',
-            description: 'A fully responsive web shop featuring cart management, secure Stripe payments, and dynamic product display powered by Printify — built with love and a bit of cat magic.',
-            image: "/intbusinesscats.png",
-            technologies: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind CSS', 'Firebase', "Printify"],
-            liveUrl: 'https://www.internationalbusinesscats.store/',
-            githubUrl: ''
-        },
-        {
-            id: 2,
             title: 'Quiz game - Single Player',
             description: 'A fast-paced single-player quiz game with difficulty levels, category selection, and animated battle effects.',
             image: "/battle-quiz.png",
             technologies: ['React', 'Tailwind CSS', 'Typescript', 'Framer Motion'],
             liveUrl: 'https://sengiria.github.io/battle-quiz/',
             githubUrl: 'https://github.com/Sengiria/battle-quiz'
+        },
+        {
+            id: 2,
+            title: 'Movie Recommandation (AI)',
+            description: 'A movie recommendation web app powered by a vector-based similarity engine.',
+            image: "/movie-reco.png",
+            technologies: ['Python', ' FastAPI', 'React', 'Tailwind CSS', 'Typescript'],
+            liveUrl: 'https://sengiria.github.io/movie-recommender-frontend/',
+            githubUrl: 'https://github.com/Sengiria/movie-recommender-frontend'
         },
         {
             id: 3,
@@ -31,6 +31,15 @@ const Portfolio = () => {
         },
         {
             id: 4,
+            title: 'E-Commerce Platform',
+            description: 'A fully responsive web shop featuring cart management, secure Stripe payments, and dynamic product display powered by Printify — built with love and a bit of cat magic.',
+            image: "/intbusinesscats.png",
+            technologies: ['Next.js', 'TypeScript', 'Stripe', 'Tailwind CSS', 'Firebase', "Printify"],
+            liveUrl: 'https://www.internationalbusinesscats.store/',
+            githubUrl: ''
+        },
+        {
+            id: 5,
             title: 'Chess',
             description: 'A polished chess game implementation with all official rules — built with attention to logic, layout, and UI consistency.',
             image: "/chess.png",
@@ -38,6 +47,7 @@ const Portfolio = () => {
             liveUrl: 'https://sengiria.github.io/chess/',
             githubUrl: 'https://github.com/Sengiria/chess'
         },
+
     ];
 
     return (
