@@ -4,6 +4,15 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
+            title: 'ArtScope',
+            description: 'A pattern recognition app using machine learning to recognize the painter of a given artwork based on visual analysis.',
+            image: "/artScope.png",
+            technologies: ['React', 'Python', 'AI', 'Tailwind CSS', 'Typescript', 'Framer Motion'],
+            liveUrl: 'https://sengiria.github.io/art-scope-frontend/',
+            githubUrl: 'https://github.com/Sengiria/art-scope-frontend'
+        },
+        {
+            id: 2,
             title: 'Quiz game - Single Player',
             description: 'A fast-paced single-player quiz game with difficulty levels, category selection, and animated battle effects.',
             image: "/battle-quiz.png",
@@ -12,8 +21,8 @@ const Portfolio = () => {
             githubUrl: 'https://github.com/Sengiria/battle-quiz'
         },
         {
-            id: 2,
-            title: 'Movie Recommandation (AI)',
+            id: 3,
+            title: 'Movie Recommandation',
             description: 'A movie recommendation web app powered by a vector-based similarity engine.',
             image: "/movie-reco.png",
             technologies: ['Python', ' FastAPI', 'React', 'Tailwind CSS', 'Typescript'],
@@ -21,7 +30,7 @@ const Portfolio = () => {
             githubUrl: 'https://github.com/Sengiria/movie-recommender-frontend'
         },
         {
-            id: 3,
+            id: 4,
             title: 'Quiz game - Multiplayer',
             description: 'A real-time multiplayer quiz battle where players compete with synced answers, Firebase logic, and smooth transitions.',
             image: "/battle-quiz-arena.png",
@@ -30,7 +39,7 @@ const Portfolio = () => {
             githubUrl: 'https://github.com/Sengiria/battle-quiz-arena'
         },
         {
-            id: 4,
+            id: 5,
             title: 'E-Commerce Platform',
             description: 'A fully responsive web shop featuring cart management, secure Stripe payments, and dynamic product display powered by Printify — built with love and a bit of cat magic.',
             image: "/intbusinesscats.png",
@@ -39,7 +48,7 @@ const Portfolio = () => {
             githubUrl: ''
         },
         {
-            id: 5,
+            id: 6,
             title: 'Chess',
             description: 'A polished chess game implementation with all official rules — built with attention to logic, layout, and UI consistency.',
             image: "/chess.png",
