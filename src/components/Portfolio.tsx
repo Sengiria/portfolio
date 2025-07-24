@@ -50,9 +50,9 @@ const Portfolio = () => {
         {
             id: 6,
             title: 'Chess',
-            description: 'A polished chess game implementation with all official rules — built with attention to logic, layout, and UI consistency.',
+            description: 'A polished chess game implementation with all official rules built with attention to logic, layout, and UI consistency. It uses stockfish for the black player AI movement.',
             image: "/chess.png",
-            technologies: ['React', 'Tailwind CSS', 'Typescript'],
+            technologies: ['React', 'Python', 'Tailwind CSS', 'Typescript'],
             liveUrl: 'https://sengiria.github.io/chess/',
             githubUrl: 'https://github.com/Sengiria/chess'
         },
